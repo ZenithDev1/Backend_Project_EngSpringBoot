@@ -8,20 +8,20 @@ import org.springframework.context.annotation.Configuration;
 public class ApplicationConfig {
 
     @Bean
-    @Qualifier("bean1")
+    @Qualifier("bean1") //multiple beans
     public MyFirstClass myFirstBean(){
         return new MyFirstClass("First Bean");
     }
 
     @Bean
-    @Qualifier("bean2")
+    @Qualifier("bean2") //multiple beans
     public MyFirstClass mySecondBean(){
         return new MyFirstClass("Second Bean");
     }
 
     @Bean
     //@Primary
-    @Qualifier("bean3")
+    @Qualifier("bean3")  //multiple beans
     public MyFirstClass myThirdBean(){
         return new MyFirstClass("Third Bean");
     }
